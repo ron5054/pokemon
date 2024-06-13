@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+display: grid;
+grid-template-rows: auto repeat(3, 1fr) auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+}
+
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon:first-of-type {
+  background-color: rgb(166, 29, 29);
+}
+
+.pokemon:last-of-type {
+  background-color: rgb(24, 104, 24);
+}
+
+.pokemon:nth-of-type(2) {
+  background-color: rgb(166, 164, 29);
+}
